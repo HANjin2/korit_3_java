@@ -4,23 +4,23 @@ import java.lang.reflect.Array;
 import java.util.*;
 
 /*
-    배열의 출력
+배열의 출력
 
-    이전 수업에서 sout(arr)형태로 배열을 출력하게 되면 배열은 참조 변수이기 때문에
-    주소값만 출력된다는 점을 확인했습니다. 그리고 반복문을 통해 element들을
-    불러올 수는 있지만 배열 전체를 출력하는 방법은 현재까진 없었습니다.
+이전 수업에서 sout(arr)형태로 배열을 출력하게 되면 배열은 참조 변수이기 때문에
+주소값만 출력된다는 점을 확인했습니다. 그리고 반복문을 통해 element들을
+불러올 수는 있지만 배열 전체를 출력하는 방법은 현재까진 없었습니다.
 
-    Arrays 클래스를 사용하고, 정적 메서드 .toString(배열명)을 사용하면
-    배열 전체를 출력할 수 있습니다.
+Arrays 클래스를 사용하고, 정적 메서드 .toString(배열명)을 사용하면
+배열 전체를 출력할 수 있습니다.
 
-    여기서 클래스명.메서드명()이라는 점에 주목할 필요가 있습니다.
-    scanner.nextLine()과는 다릅니다.
-    그리고 또한 toString()이라는 메서드도 곧 사용합니다.
+여기서 클래스명.메서드명()이라는 점에 주목할 필요가 있습니다.
+        scanner.nextLine()과는 다릅니다.
+그리고 또한 toString()이라는 메서드도 곧 사용합니다.
 
-    여기서 기억해야할 점은 동일한 method명이라고 하더라도 어떤 클래스에 종속
-    돼있는가에 따라 다른 결과값을 지닐 수 있다는 점입니다.
-    ex) random.nextInt(); -> int 범위 내에 있는 임의의 정수를 반환
-    ex) scanner.nextInt(); -> int를 콘솔에 입력해서 그 값을 대입
+여기서 기억해야할 점은 동일한 method명이라고 하더라도 어떤 클래스에 종속
+돼있는가에 따라 다른 결과값을 지닐 수 있다는 점입니다.
+ex) random.nextInt(); -> int 범위 내에 있는 임의의 정수를 반환
+ex) scanner.nextInt(); -> int를 콘솔에 입력해서 그 값을 대입
  */
 public class Array11 {
     public static void main(String[] args) {
@@ -77,11 +77,14 @@ public class Array11 {
         // 내림 차순 배열
         Arrays.sort(numbers, Comparator.reverseOrder());
         // 오름차순 시에 사용했던 sort()와 마찬가지로 배열 자체를 다 바꿉니다.
-        // .sort() 내부에 argument가 두 개라는 점에서 여러분들은
+        // .sort() 내부의 argument가 두 개 라는 점에서 여러분들은
         // overloading이 이루어졌다는 점을 추측할 수 있으면 현재는 만족스럽습니다.
         // Comparator.reverseOrder() 메서드를 사용하기 위해서
-        // int[] -> Integer[]로 바꿨는데, 기본 자료형 int를 String 처럼
-        // 클래스를 바꿨다고만 일단 생각해주시면 됩니다.
+        // int[] -> Integer[]로 바꿨는데, 기본 자료형 int를 String처럼
+        // 클래스로 바꿨다고만 일단 생각해주시면 됩니다.
         // 추후 수업 예정
+
+        double a = 1.2;
+        Double b = 1.2;
     }
 }
